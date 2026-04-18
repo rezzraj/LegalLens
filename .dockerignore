@@ -9,3 +9,4 @@ __pycache__/
 
 model/
 gemma-3-1b-it/
+model_emb/

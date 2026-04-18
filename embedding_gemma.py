@@ -1,13 +1,29 @@
+import os
+
+import sys
+
+print("RUNNING FILE:", __file__)
+print("PYTHON:", sys.executable)
 import torch
+os.environ["HF_HUB_OFFLINE"] = "1"
 from sentence_transformers import SentenceTransformer
+
+
+
+
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_id = "google/embeddinggemma-300M"
-model1 = SentenceTransformer(model_id).to(device=device)
+model_path = "model_emb"
 
 
 
+
+model1 = SentenceTransformer(
+    model_path,
+    device=device,
+    local_files_only=True
+)
 
 
 
