@@ -1,0 +1,11 @@
+.git
+.gitignore
+.idea/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+model/
+gemma-3-1b-it/

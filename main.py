@@ -12,7 +12,7 @@ import re
 
 
 # Point Python to the cloned repo root
-sys.path.append(r"C:\Users\akshi\PycharmProjects\Gemma-4\gemma_pytorch")
+sys.path.append(os.path.join(os.path.dirname(__file__), "gemma_pytorch"))
 
 from gemma.config import get_model_config
 from gemma.model import GemmaForCausalLM
@@ -26,9 +26,9 @@ CONFIG = VARIANT.split("-")[0]   # "1b"
 
 
 
-# Download the OFFICIAL PYTORCH checkpoint, not transformers weights
-weights_dir = kagglehub.model_download(f"google/gemma-3/pyTorch/gemma-3-{VARIANT}")
-#print("weights_dir:", weights_dir)
+# Loading the model weights
+weights_dir = "model"
+print("weights_dir:", weights_dir)
 
 # Tokenizer and checkpoint
 tokenizer_path = os.path.join(weights_dir, "tokenizer.model")
@@ -285,7 +285,7 @@ def model_generate(x):
             "who created you?": "i was created by Akshit Raj",
             "who created you": "i was created by Akshit Raj",
             "who built you": "i was created by Akshit Raj",
-            "who is that": "he is a second year student in niit university",
+            "who is akshit raj": "he is a second year student in niit university",
             "how can you help me": "I am a chat bot trained on the Information and Technology ACT, 2000. I can answer questions related to the act.",
             "what can you help me with": "i can help you on the Information and Technology ACT, 2000. I can answer questions related to the act, or to simplify just ask me about the digital law ",
             "wassup": "Hey! 👋",
@@ -293,6 +293,7 @@ def model_generate(x):
             "sup": "Hey! 👋",
             "yo": "Hey! 👋",
             "bro": "😂 what's up bro",
+            "whats up?": "All good, how can i help you?",
         }
 
         if x.lower().strip() in casual_responses:
@@ -356,7 +357,7 @@ def model_generate(x):
                     output = model.generate(
                         full_prompt,
                         device=device,
-                        output_len=1000,
+                        output_len=100,
                         temperature=0.4,
                         top_p=0.95,
                         top_k=64,
@@ -380,7 +381,7 @@ def model_generate(x):
                     top_3_sections += "this section is from chapter no: " + chapter_name + "\n"
                     top_3_sections += "this section name is: " + section_name + "\n"
                     top_3_sections += "this is the section content: " + section_text + "\n"
-                    top_3_sections += "these are sample questions from the current section: " + section_questions + "\n\n"
+
                 else:
                     break
 
@@ -393,20 +394,13 @@ def model_generate(x):
 
 
         user_turn = USER_CHAT_TEMPLATE.format(prompt=f""" you are answering questions related to the information and technology act 2000
-you must explain what the user asks in detail
-if you think more than one sections mentioned in the context are relevant to user's query than mention them to the user
 Answer only from the context below.
-Do not define any term unless the definition is clearly written in the context.
-Do not add examples or explanations that are not directly supported by the context.     
-If the question is broad or general, do not define the topic unless the definition is clearly present in the context.
-Instead, explain that the context contains related sections and summarize only what those sections say.
+Do not define any term unless the definition is clearly written in the context.   
 Do not add examples, categories, or meanings that are not explicitly supported by the context.
-If the context contains only related sections, say that the context contains related provisions, not a full definition.
-if user asks you to explain any section, for example "explain section 12" then u must explain what is written in the section..
+if user asks you to explain any section, for example "explain section 12" then u must explain the section in summarized form based on context and is easy to read ..
 Context:
 {top_3_sections}
 
-At the end you should also mention the sections you used from the context to answer the question as sources you must only mention the sections and not chapters not at all
 answer the question below
 Question: {x}""")
 
@@ -420,7 +414,7 @@ Question: {x}""")
             output = model.generate(
                 full_prompt,
                 device=device,
-                output_len=1000,
+                output_len=270,
                 temperature=0.1,
                 top_p=0.95,
                 top_k=64,
@@ -441,32 +435,4 @@ if __name__ == "__main__":
             break
 
         print(model_generate(x))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

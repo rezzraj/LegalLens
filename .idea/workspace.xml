@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50b3f5-c3cc-4f73-947e-ddb97b528bb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Gemma-4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embedding_gemma.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embedding_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gemma_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gemma_pytorch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it_act_2000_updated.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it_act_2000_updated____trimmed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text_extraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gemma_pytorch" beforeDir="false" afterPath="$PROJECT_DIR$/gemma_pytorch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gemma_pytorch/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gemma_pytorch/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +33,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="51" />
+    <option name="cachedIndexableFilesCount" value="56" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.api.executor": "Run",
     "Python.embedding-gemma.executor": "Run",
@@ -112,6 +103,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\akshi\PycharmProjects\Gemma-4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akshi\PycharmProjects\Gemma-4\model" />
     </key>
   </component>
   <component name="SharedIndexes">

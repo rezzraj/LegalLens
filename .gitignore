@@ -1,0 +1,4 @@
+model/
+.venv/
+gemma-3-1b-it/
+Dockerfile
