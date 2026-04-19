@@ -11,7 +11,7 @@ Instead of directly sending a user’s question to a language model, this projec
 *you can download some examples from my conversation with the model to check it out*
 ## Download Example Files
 
-Here are some example files:
+Here are some example files (click on download raw file and open from the system):
 
 - [sample1.mhtml](Converstaion_With_legal_lens.mhtml)
 - [sample4.mhtml](Legal_Lens_explainIneasy.mhtml)
