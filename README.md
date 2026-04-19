@@ -5,6 +5,7 @@
 gh repo clone rezzraj/LegalLens
 ```
 **2.Download the model weights from Google Drive:**
+Download model weights: [Click here](https://drive.google.com/file/d/1WBj6kP0iH8ti0FJ4vVhnKsH0cKrqyJob/view?usp=sharing)
 ```bash
 Two Folders:
 model/
