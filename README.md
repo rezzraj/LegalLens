@@ -10,7 +10,7 @@ Two Folders:
 model/
 model_emb/
 ```
-***Place the downloaded file inside the project folder without changing its name.***
+*Place the downloaded file inside the project folder without changing its name.***
 
 **3.Clone the Gemma PyTorch repository:**
 ```bash
@@ -24,5 +24,5 @@ pip install -r requirements.txt
 **5.Run the application:**
 streamlit run app.py
 
-***Important***
-***Keep all files inside the project folder and do not rename any files, otherwise the app may not work correctly.***
+
+*Keep all files inside the project folder and do not rename any files, otherwise the app may not work correctly.***
