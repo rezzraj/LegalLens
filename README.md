@@ -5,6 +5,16 @@
 LegalLens is a legal question-answering system built around **The Information Technology Act, 2000**.
 Instead of directly sending a user’s question to a language model, this project first retrieves the most relevant legal sections from the Act and then generates an answer using that retrieved context. In simple terms, it works as a **RAG-based legal assistant**, where retrieval happens before generation so that the final answer stays grounded in the source document.
 
+***the model could not be deplaoyed due to huge size and gpu requirements and requires paid platform for hosting***
+*you can download some examples from my conversation with the model to check it out*
+## Download Example Files
+
+Here are some example files:
+
+- [sample1.mhtml](Converstaion_With_legal_lens.mhtml)
+- [sample4.mhtml](Legal_Lens_explainIneasy.mhtml)
+- [sample3.mhtml](Legal_LensAdvanceQues.mhtml)
+- [sample2.mhtml](Legal_Lens.mhtml)
 ## What the project does
 
 - Takes the **IT Act, 2000 PDF** as the source document
