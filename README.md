@@ -1,14 +1,7 @@
 # LegalLens
 
-LegalLens is a legal question-answering system built around **The Information Technology Act, 2000**. The goal of this project was to build something more reliable than a normal chatbot by making the model answer from the actual law instead of generating vague responses from memory.
-
+LegalLens is a legal question-answering system built around **The Information Technology Act, 2000**.
 Instead of directly sending a user’s question to a language model, this project first retrieves the most relevant legal sections from the Act and then generates an answer using that retrieved context. In simple terms, it works as a **RAG-based legal assistant**, where retrieval happens before generation so that the final answer stays grounded in the source document.
-
-## Why I built this
-
-I wanted to build a project that was not just “ask a model and get an answer,” but an actual pipeline that solves a practical problem. Legal documents are long, structured, and full of dense language, so this project was a good way to explore document processing, semantic retrieval, prompt control, and model-based answering in one system.
-
-The main idea was to create a chatbot that can answer questions about the IT Act, 2000 by finding the right sections first, rather than trusting the model to guess.
 
 ## What the project does
 
@@ -19,7 +12,7 @@ The main idea was to create a chatbot that can answer questions about the IT Act
 - Generates likely user questions for each section to improve retrieval
 - Converts both legal sections and user queries into embeddings
 - Finds the most relevant sections using semantic similarity
-- Passes the retrieved context into **Gemma** to generate the final answer
+- Passes the retrieved context into **Gemma-3** to generate the final answer
 - Serves the system through a **Streamlit** interface
 
 ## How it works
