@@ -7,3 +7,4 @@ gh repo clone google/gemma_pytorch
 ### install requirements.txt
 
 ## run-> streamlit run app.py 
+**Note -keep all the files inside your project folder without chnaging the names.**
