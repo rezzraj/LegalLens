@@ -3,6 +3,8 @@
 ![My project image2](image(1).png)
 ![My project image3](image(2).png)
 
+See a quick video demo-  [YT link (20 sec demo)](https://www.youtube.com/watch?v=qHVS_Av24Hw&list=PLxi7oBxXioe8Y-6NwhUHNSblNTRE92fCe)
+
 LegalLens is a legal question-answering system built around **The Information Technology Act, 2000**.
 Instead of directly sending a user’s question to a language model, this project first retrieves the most relevant legal sections from the Act and then generates an answer using that retrieved context. In simple terms, it works as a **RAG-based legal assistant**, where retrieval happens before generation so that the final answer stays grounded in the source document.
 
